@@ -1,4 +1,5 @@
 :root {
+    --background-color:#1b1b1b;
     --primary-color: #252525;
     --secondary-color: #353535;
     --accent-color: #007bff;
@@ -7,7 +8,7 @@
 }
 
 body {
-    background-color: var(--primary-color);
+    background-color: var(--background-color);
     font-family: var(--font-family); 
     color: var(--text-color);
     margin: 0;
