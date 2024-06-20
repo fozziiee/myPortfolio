@@ -1,7 +1,8 @@
 :root {
-    --primary-color: #f0f0f0;
+    --primary-color: #252525;
+    --secondary-color: #353535;
     --accent-color: #007bff;
-    --text-color:#333;
+    --text-color:#dadada;
     --font-family: 'Nunito', sans-serif;
 }
 
@@ -15,7 +16,7 @@ body {
 }
 
 header {
-    background: #fff;
+    background: var(--primary-color);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
@@ -56,7 +57,7 @@ header nav ul li a:hover {
 }
 
 .about-me-container {
-    background: #fff;
+    background: var(--primary-color);
     padding: 20px;
     margin-bottom: 20px;
     display: flex;
@@ -84,12 +85,12 @@ img {
 footer {
     text-align: center;
     padding: 20px;
-    background: #fff;
+    background: var(--primary-color);
     box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
 }
 
 section {
-    background: #fff;
+    background: var(--secondary-color);
     padding: 20px;
     margin-bottom: 20px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -111,7 +112,7 @@ section {
 }
 
 #my-projects li, section li {
-    background: #f9f9f9;
+    background: var(--primary-color);
     padding: 15px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     transition: transform 0.2s ease-in-out;
