@@ -3,54 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <title>fozz.dev</title>
 </head>
-<body>
+<body class="dark-mode">
     <header>
         <nav>
+            <h1>Kayde Foster</h1>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="./contact.html">Contact</a></li>
             </ul>
+            <button onclick="darkMode()">Dark Mode</button>
         </nav>
     </header>
 
     <!-- The me section -->
-    <section id="me-section">
-        <div class="main-container">
-            <h1>Kayde Foster</h1>
-            <p>Web Developer</p>
-            <p>Hi, I'm Kayde. I am a passionate web developer with a strong focus on full-stack development. I love creating beautiful and user-friendly websites that provide a great user experience. With expertise in HTML, CSS, and JavaScript, I strive to build responsive and accessible web applications.</p>
-            <div class="portrait-img">
-                <img src="" alt="portrait-img">
+    <main class="container">
+        <section id="me-section">
+            <div class="about-me-container">
+                <div class="text-container">
+                    <h2>About Me</h2>
+                    <p class="my-name">Kayde Foster</p>
+                    <p>Web Developer</p>
+                    <p>Hi, I'm Kayde. I am a passionate web developer with a strong focus on full-stack development. I love creating beautiful and user-friendly websites that provide a great user experience. With expertise in HTML, CSS, and JavaScript, I strive to build responsive and accessible web applications.</p>
+                    <p>Fun fact: I have been programming for <span id="time-container"></span> seconds!</p>
+                </div>
+                <img src="./profile-pic.PNG" alt="portrait-img">
             </div>
-        </div>
-    </section>
-    
-    <!-- Projects section -->
-    <section id="my-projects">
-        <h4>Below you find the projects I have worked on</h4>
-        <ul>
-            <li>E-commerce API</li>
-            <li>Another project</li>
-            <li>And another project</li>
-        </ul>
-    </section>
+        </section>
+        
+        <!-- Projects section -->
+        <section id="my-projects">
+            <h2>Projects</h2>
+            <h4>The projects I have worked on</h4>
+            <ul>
+                <li>E-commerce API</li>
+                <li>Another project</li>
+                <li>And another project</li>
+            </ul>
+        </section>
+        <!-- Skills section -->
+        <section>
+            <h2>Skills</h2>
+            <h4>My current skills include:</h4>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>node.js</li>
+                <li>React</li>
+            </ul>
+        </section>
+    </main>
 
-    <!-- Skills section -->
-    <section>
-        <h4>My current skills include:</h4>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>node.js</li>
-            <li>React</li>
-        </ul>
-    </section>
+    <footer>
+        &copy; <span>Kayde Foster 2024</span>
+    </footer>
 
+    <script src="./script.js">
+    </script>
 </body>
 </html>
